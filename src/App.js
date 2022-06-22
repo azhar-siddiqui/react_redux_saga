@@ -1,5 +1,5 @@
 import "./App.css";
-import { AddToCart } from "./redux/action";
+import { AddToCart, RemoveToCart } from "./redux/action";
 import { useDispatch } from "react-redux";
 
 function App() {
@@ -13,6 +13,9 @@ function App() {
   return (
     <div className="App">
       <button onClick={() => dispatch(AddToCart(data))}>Add To cart</button>
+      <button onClick={() => dispatch(RemoveToCart(data))}>
+        Remove To cart
+      </button>
     </div>
   );
 }

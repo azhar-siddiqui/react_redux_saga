@@ -7,7 +7,7 @@ function App() {
   const data = {
     name: "iPhone 14",
     type: "Mobile",
-    Price: 4000,
+    Price: 40000,
     color: "red",
   };
   return (
